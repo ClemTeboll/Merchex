@@ -1,0 +1,14 @@
+<html>
+    <head>
+        <title>Listing</title>
+    </head>
+
+    <body>
+        <h1>Annonces</h1>
+        <ul>
+            {% for announcement in announcements %}
+            <li>{{ announcement.title }}</li>
+            {% endfor %}
+        </ul>
+    </body>
+</html>
