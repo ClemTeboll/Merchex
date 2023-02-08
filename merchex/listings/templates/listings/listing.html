@@ -1,14 +1,12 @@
-<html>
-    <head>
-        <title>Listing</title>
-    </head>
+{% extends 'listings/base.html' %}
 
-    <body>
-        <h1>Annonces</h1>
-        <ul>
-            {% for announcement in announcements %}
-            <li>{{ announcement.title }}</li>
-            {% endfor %}
-        </ul>
-    </body>
-</html>
+{% block content %}
+
+<h1>Annonces</h1>
+<ul>
+    {% for announcement in announcements %}
+    <li>{{ announcement.title }}</li>
+    {% endfor %}
+</ul>
+
+{% endblock %}
